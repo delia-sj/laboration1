@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
     <title>Laboration 1</title>
   </head>
   <body>
     <h1>Kursinformation</h1>
     <form id="kursinformation">
-      <input type="text" id="kurskod">
-      <input type="text" id="kursnamn">
-      <input type="text" id="progression">
-      <input type="text" id="syllabus">
+      <label> Kurskod:
+        <input type="text" id="kurskod">
+      </label>
+      <label> Kursnamn:
+        <input type="text" id="kursnamn">
+      </label>
+      <label> Progression:
+        <input type="text" id="progression">
+      </label>
+      <label> URL till kursplanen:
+        <input type="text" id="syllabus">
+      </label>
       <input type="submit" id="submit-btn">
     </form>
     <div id="kurslista"></div>
