@@ -11,3 +11,15 @@ const nameInput: HTMLInputElement = document.querySelector("#kursnamn") as HTMLI
 const progressionSelect: HTMLSelectElement = document.querySelector("#progression") as HTMLSelectElement;
 const syllabusInput: HTMLInputElement = document.querySelector("#syllabus") as HTMLInputElement;
 const courseList: HTMLDivElement = document.querySelector("#kurslista") as HTMLDivElement;
+
+form.addEventListener("submit", (event: SubmitEvent): void => {
+    event.preventDefault(); // stoppar omladdning av sidan
+    const newCourse: CourseInfo = {
+        code: codeInput.value,
+        name: nameInput.value,
+        progression: progressionSelect.value as "A" | "B" | "C", //värdet behandlas som någon av de tre tillåtna alternativen
+        syllabus: syllabusInput.value
+    }
+console.log(newCourse); // endast test
+    
+});
