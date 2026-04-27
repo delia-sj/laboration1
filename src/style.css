@@ -30,7 +30,8 @@ h1 {
   gap: 0.5em;
 }
 
-#kursinformation input {
+#kursinformation input,
+select {
   padding: 0.5em;
 }
 
