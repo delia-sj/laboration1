@@ -20,6 +20,11 @@ form.addEventListener("submit", (event: SubmitEvent): void => {
         progression: progressionSelect.value as "A" | "B" | "C", //värdet behandlas som någon av de tre tillåtna alternativen
         syllabus: syllabusInput.value
     }
-console.log(newCourse); // endast test
-    
+printCourse(newCourse);   
 });
+
+function printCourse(course:CourseInfo) {
+    const p: HTMLParagraphElement = document.createElement ("p");
+    p.textContent = `Kurskod: ${course.code}. Kursnamn: ${course.name}. Progression: ${course.progression}. Länk till kursplan: ${course.syllabus}`;
+    courseList.appendChild(p);
+}
