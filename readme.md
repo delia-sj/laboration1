@@ -1,0 +1,1 @@
+Det här är en readme för laboration 1.
